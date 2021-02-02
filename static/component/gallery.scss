@@ -1,0 +1,10 @@
+.g-gallery {
+  .parrafo {
+    font-size: 28px;
+    line-height: 30px;
+    
+    @media (min-width: 992px) {
+      font-weight: bold;
+    };
+  }
+}

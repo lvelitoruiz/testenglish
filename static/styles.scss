@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap');
+
+@import "./variable.scss";
+@import "./helpers.scss";
+@import "./component/button.scss";
+@import "./component/text.scss";
+@import "./component/card.scss";
+@import "./component/gallery.scss";
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.bg-banner {
+  background: $blue;
+  padding-bottom: 40px;
+
+  @media (min-width: 992px) {
+    background: url("../assets/img/bg-desktop.svg");
+    height: 560px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+  }
+
+  .parrafo {
+    color: white;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    font-weight: 300;
+
+    @media (min-width: 992px) {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  .title {
+    color: $yellow;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 36px;
+
+    @media (min-width: 992px) {
+      font-size: 47px;
+      line-height: 50px;
+    }
+  }
+
+  .subtitle {
+    color: $yellow;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 30px;
+
+    @media (min-width: 992px) {
+      font-size: 34px;
+      line-height: 38px;
+    }
+  }
+}
